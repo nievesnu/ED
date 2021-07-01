@@ -1,3 +1,5 @@
+//Nieves Núñez Ugena
+//A52
 #ifndef ListaInvierteDoble_h
 #define ListaInvierteDoble_h
 

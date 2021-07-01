@@ -1,16 +1,3 @@
-//
-//  queue_eda.h
-//
-//  Implementación del TAD cola con nodos enlazados
-//  y punteros al primero y al último nodo
-//
-//  Estructuras de Datos
-//  Facultad de Informática
-//  Universidad Complutense de Madrid
-//
-//  Copyright (c) 2020 Alberto Verdejo
-//
-
 #ifndef queue_eda_h
 #define queue_eda_h
 
@@ -66,26 +53,26 @@ public:
     // añadir un elemento al final de la cola
     void push(T const& elem) {
         Nodo* nuevo = new Nodo(elem);
-
+		
+		if (prim == nullptr) // la cola estaba vacía
+            prim = nuevo;
+			++nelems;
         if (ult != nullptr)
             ult->sig = nuevo;
-        ult = nuevo;
-        if (prim == nullptr) // la cola estaba vacía
-            prim = nuevo;
-        ++nelems;
+			ult = nuevo;        
     }
 
     // consultar el primero de la cola
     T const& front() const {
         if (empty())
-            throw std::domain_error("la cola vacia no tiene primero");
+            throw std::domain_error("La cola vacia no tiene primero");
         return prim->elem;
     }
 
     // eliminar el primero de la cola
     void pop() {
         if (empty())
-            throw std::domain_error("eliminando de una cola vacia");
+            throw std::domain_error("Eliminando de una cola vacia");
         Nodo* a_borrar = prim;
         prim = prim->sig;
         if (prim == nullptr) // la cola se ha quedado vacía

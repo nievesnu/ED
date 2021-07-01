@@ -1,5 +1,5 @@
-//Álvaro Miguel Rodríguez Mateos
-//A63
+//Nieves Núñez Ugena
+//A52
 
 #ifndef ListaDuplicaDoble_h
 #define ListaDuplicaDoble_h

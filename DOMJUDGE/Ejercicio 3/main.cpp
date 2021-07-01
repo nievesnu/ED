@@ -61,13 +61,13 @@ bool evaluarComplejo(const int& vueltas, const float& real, const float& imagina
 
 void resuelveCaso() {
 
-	float real, imag;
+	float real, im;
 	int vueltas;
 	std::cin >> real;
-	std::cin >> imag >> vueltas;
-	Complejo<float> c(real, imag);
+	std::cin >> im >> vueltas;
+	Complejo<float> c(real, im);
 
-	if (evaluarComplejo<float>(vueltas, real, imag)) std::cout << "SI\n";
+	if (evaluarComplejo<float>(vueltas, real, im)) std::cout << "SI\n";
 	else std::cout << "NO\n";
 }
 

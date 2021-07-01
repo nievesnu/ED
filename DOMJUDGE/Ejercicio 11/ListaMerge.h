@@ -1,6 +1,5 @@
-//Álvaro Miguel Rodríguez Mateos
-//A63
-
+//Nieves Núñez Ugena
+//A52
 #ifndef ListaMerge_h
 #define ListaMerge_h
 

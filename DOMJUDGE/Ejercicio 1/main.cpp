@@ -5,7 +5,7 @@
 
 
 bool resuelveCaso() {
-	int n, h;
+	int n, h; 
 	std::cin >> n >> h;
 
 	if (n == 0 && h == 0) return false;

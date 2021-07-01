@@ -1,5 +1,5 @@
-//Álvaro Miguel Ródríguez Mateos
-//A67
+//Nieves Núñez Ugena
+//A52
 
 #include <iostream>
 #include <fstream>

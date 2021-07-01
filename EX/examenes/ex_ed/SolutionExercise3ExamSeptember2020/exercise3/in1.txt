@@ -1,0 +1,30 @@
+registerProduct chips 2
+registerProduct spicyChips 3
+registerProduct pepper 4
+registerService manuel
+registerCommand manuel chips spicyChips end
+registerCommand manuel spicyChips pepper end
+processCommand
+processCommand
+closeService manuel
+end
+registerProduct chips 2
+registerProduct spicyChips 3
+registerProduct pepper 4
+registerService manuel
+registerCommand manuel chips spicyChips end
+registerService juan
+registerCommand juan spicyChips pepper end
+processCommand
+closeService juan
+processCommand
+closeService juan
+end
+registerService jhon
+registerCommand jhon croquettes end
+end
+registerService laura
+registerService laura
+processCommand
+end
+end

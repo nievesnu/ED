@@ -1,0 +1,6 @@
+chips 1 pepper 1 spicyChips 2 12
+ECloseService
+pepper 1 spicyChips 1 7
+ERegisterCommand
+EServiceExists
+ENoCommands
